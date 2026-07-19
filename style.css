@@ -284,6 +284,58 @@ body {
   color: var(--color-primary-dark);
 }
 
+/* 예약/문의 안내 */
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.booking-block {
+  background: #fff;
+  border: 1px solid #ece2cc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.booking-block h3 {
+  margin-top: 0;
+  color: var(--color-primary-dark);
+}
+
+.hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ece2cc;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-day {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.hours-time {
+  color: var(--color-text-muted);
+}
+
+.booking-phone {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0;
+}
+
 /* Contact */
 .contact-list {
   list-style: none;
@@ -319,6 +371,7 @@ body {
   .section { padding: 44px 0; }
   .map-embed-wrapper { padding-bottom: 75%; }
   .direction-list { grid-template-columns: 1fr; }
+  .booking-grid { grid-template-columns: 1fr; }
   .counselor-profile summary { flex-wrap: wrap; }
 }
 
